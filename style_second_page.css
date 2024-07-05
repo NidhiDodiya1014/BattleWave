@@ -1,0 +1,63 @@
+.secondPage {
+    background-image: linear-gradient(to bottom, #000000, #323232);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+  
+  .container {
+    padding: 4px;
+    background-image: linear-gradient(to bottom,#323232, #000000 );
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    border: 2px solid #555;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  .container li {
+    font-family: 'Cutive Mono', monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .instructions-header {
+    color: red; 
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .instructions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .instructions li:nth-child(odd) {
+    color: rgb(169, 165, 165);
+    /* Add a subtle, creepy shadow */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .instructions li:nth-child(even) {
+    color: rgb(255, 255, 255);
+    /* Add a subtle, creepy shadow */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
