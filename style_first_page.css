@@ -42,20 +42,39 @@ body {
 
     background-color: rgb(243, 56, 56);
     color: #FFFFFF;
-    font-weight: 400;
+    font-weight: 600;
     font-size: larger;
     border: none;
     padding: 15px 32px;
     cursor: pointer;
-
-
+    
+    
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.startGame:hover{
+    background-color: green;
+
+}
+
+.loader1{
+    top: 62%;
+    left: 48%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (min-width: 2015px) {
     .startGame {
         top: 902px;
         left: 50%;
+    }
+    .loader1 {
+        top: 882px;
+        left: 49%;
     }
 }

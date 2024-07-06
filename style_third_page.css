@@ -7,9 +7,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     background-color: #3498db;
     background-image: linear-gradient(to bottom, #060606, #2980b9);
+    gap: 2vh;
 }
 
 .box {
@@ -35,8 +37,69 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.box>div:hover {
+.text:hover {
     cursor: pointer;
     background-color: #e74c3c;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.select-any-cells {
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+}
+
+.startGame2 {
+    top: 20vh;
+    position: absolute;
+    background-color: rgb(243, 56, 56);
+    color: #FFFFFF;
+    font-size: larger;
+    font-weight: 600;
+    border: none;
+    padding: 15px 32px;
+    cursor: pointer;
+
+
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.loader {
+    top: 20vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-circle {
+    width: 30px;
+    height: 30px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 431px) {
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

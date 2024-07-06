@@ -8,9 +8,13 @@
 </head>
 
 <body>
-    <div class="firstPage" style="visibility: hidden;">
+    <div class="firstPage">
         <video id="starty" src="starty.mp4" muted></video>
         <button class="startGame">Start</button>
+        <div class="loader1" style="display: none;">
+            <div class="loading-circle"></div>
+            <span style="color: white;">Loading...</span>
+        </div>
     </div>
 
     <div class="secondPage" style="visibility: hidden;">
@@ -30,9 +34,20 @@
                 <li>The game ends when one of the player destroys every ship of respective opponent.</li>
             </ol>
         </div>
+        <button class="button_ok">Ok</button>
+        <div class="loader2" style="display: none;">
+            <div class="loading-circle"></div>
+            <span style="color: white;">Loading...</span>
+        </div>
     </div>
 
-    <div class="thirdPage">
+    <div class="thirdPage" style="display: none;" >
+        <h2 class="select-any-cells">Select any 5 cells</h2>
+        <button class="startGame2" style="display: none;">Start </button>
+        <div class="loader" style="display: none;">
+            <div class="loading-circle"></div>
+            <span style="color: white;">Loading...</span>
+        </div>
         <div class="box">
             <div class="text"></div>
             <div class="text"></div>
@@ -105,3 +120,5 @@
 
 <!-- js files -->
 <script src="script_first_page.js"></script>
+<script src="script_second_page.js"></script>
+<script src="script_third_page.js"></script>
