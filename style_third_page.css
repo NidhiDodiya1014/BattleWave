@@ -1,0 +1,42 @@
+.thirdPage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3498db;
+    background-image: linear-gradient(to bottom, #060606, #2980b9);
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+    background-color: #e5e5e5;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.box>div {
+    background-color: #fff;
+    width: 1vw;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #666;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.box>div:hover {
+    cursor: pointer;
+    background-color: #e74c3c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
