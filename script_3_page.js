@@ -1,28 +1,40 @@
 const textElements = document.querySelectorAll('.text');
 let count = 0;
-textElements.forEach(element => {
+let selectedCells = [];
+
+textElements.forEach((element, index) => {
     element.addEventListener('click', () => {
         if (count < 5) {
             if (element.style.backgroundColor != 'green') {
                 element.style.backgroundColor = 'green';
                 count++;
-            }
-            else if (element.style.backgroundColor == 'green') {
+                selectedCells.push(index); 
+            } else if (element.style.backgroundColor == 'green') {
                 element.style.backgroundColor = 'white';
                 count--;
+                for(let i=0;i<selectedCells.length;i++){
+                    if(selectedCells[i]==index){
+                        selectedCells[i]=-1;
+                    }
+                }
             }
             allFive();
-        }
-        else if (element.style.backgroundColor == 'green') {
+            localStorage.setItem('selectedCells', JSON.stringify(selectedCells));
+        } else if (element.style.backgroundColor == 'green') {
             element.style.backgroundColor = 'white';
             count--;
-            allFive();
-        }
-        else {
+            for(let i=0;i<selectedCells.length;i++){
+                if(selectedCells[i]==index){
+                    selectedCells[i]=-1;
+                }
+            }
+            localStorage.setItem('selectedCells', JSON.stringify(selectedCells));
+        } else {
             alert("You've reached the maximum limit of clicks!");
         }
     });
 });
+
 
 function allFive() {
     if (count == 5) {

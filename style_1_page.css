@@ -4,12 +4,6 @@ body {
     padding: 0;
 }
 
-.firstPage {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
 
 #starty {
     position: absolute;
@@ -19,6 +13,14 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+.firstPage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
 
 #starty::-webkit-media-controls {
     display: none;
