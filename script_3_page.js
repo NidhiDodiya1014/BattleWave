@@ -74,6 +74,6 @@ document.querySelector(".startGame2").addEventListener('click', () => {
     setTimeout(() => {
         document.querySelector(".loader").style.display = "none";
         document.querySelector(".thirdPage").style.display = "none";
-        document.querySelector(".fourthPage").style.visibility = "visible";
+        document.querySelector(".fourthPage").style.display = "block";
     }, 1100);
 });

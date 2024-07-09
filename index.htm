@@ -8,8 +8,9 @@
 </head>
 
 <body>
-    <div class="firstPage" style="visibility: hidden;">
+    <div class="firstPage">
         <video id="starty" src="starty.mp4" controls autoplay muted loop></video>
+        <textarea class="select1" name="select1" placeholder="Enter your name"></textarea>
         <button class="startGame">Start</button>
         <div class="loader1" style="display: none;">
             <div class="loading-circle"></div>
@@ -101,10 +102,11 @@
         </div>
     </div>
 
-    <div class="fourthPage">
+    <div class="fourthPage" style="display: none;">
         <div class="vessel">
             <div class="left">
                 <h2 class="computer machine">Computer's turn</h2>
+                <div class="cName" style="color: red; text-align: center; font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Computer's grid</div>
                 <div class="box_C">
                     <div class="text_C"></div>
                     <div class="text_C"></div>
@@ -156,14 +158,18 @@
                     <div class="text_C"></div>
                     <div class="text_C"></div>
                 </div>
+                
             </div>
             <div class="choose">
-                <textarea name="select" placeholder="Enter a valid value"></textarea>
+                <textarea class="select" name="select" placeholder="Enter a valid value"></textarea>
                 <button type="button" class="button_ok ok1">Ok</button>
+                <img class="gif" src="winning.gif" style="width: 14vw; margin-top: 6vh;;" alt="dancing"> </img>
+                <img class="gif1" src="lost.webp" style="width: 14vw; margin-top: 6vh;;" alt="losing"> </img>
             </div>
 
             <div class="right">
                 <h2 class="computer my">Your turn</h2>
+                <div class="naam" style="color: red; text-align: center; font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"></div>
                 <div class="box_U">
                     <div class="text_U"></div>
                     <div class="text_U"></div>

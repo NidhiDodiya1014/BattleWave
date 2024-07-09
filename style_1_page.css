@@ -33,7 +33,7 @@ body {
 .startGame {
 
     position: absolute;
-    top: 65%;
+    top: 74%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -49,19 +49,18 @@ body {
     border: none;
     padding: 15px 32px;
     cursor: pointer;
-    
-    
+
+
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.startGame:hover{
+.startGame:hover {
     background-color: green;
-
 }
 
-.loader1{
-    top: 62%;
+.loader1 {
+    top: 72%;
     left: 48%;
     position: absolute;
     display: flex;
@@ -70,13 +69,57 @@ body {
     justify-content: center;
 }
 
+textarea[name="select1"] {
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    resize: vertical;
+    background-image: linear-gradient(to bottom, #52bdff    , #000000);
+    background-size: 100% 200px;
+    background-position: 0% 100%;
+    transition: background-position 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+  
+  textarea[name="select1"]:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background-position: 100% 100%;
+  }
+  
+  textarea[name="select1"]::placeholder {
+    font-size: 18px; /* increased font size to 18px */
+    color: #ccc;
+  }
+  
+  textarea[name="select1"]:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-position: 50% 100%;
+  }
+
+.select1 {
+    position: absolute;
+    top: 62%;
+    left: 43%;
+}
+
 @media (min-width: 2015px) {
     .startGame {
-        top: 902px;
-        left: 50%;
+        top: 90vh;
+        left: 51%;
     }
+
     .loader1 {
-        top: 882px;
+        top: 88vh;
+        left: 49%;
+    }
+
+    .select1 {
+        top: 79%;
         left: 49%;
     }
 }
+
