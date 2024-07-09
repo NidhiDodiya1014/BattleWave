@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div class="firstPage" >
+    <div class="firstPage" style="visibility: hidden;">
         <video id="starty" src="starty.mp4" controls autoplay muted loop></video>
         <button class="startGame">Start</button>
         <div class="loader1" style="display: none;">
@@ -101,7 +101,7 @@
         </div>
     </div>
 
-    <div class="fourthPage" style="display: none;">
+    <div class="fourthPage">
         <div class="vessel">
             <div class="left">
                 <h2 class="computer machine">Computer's turn</h2>
@@ -157,6 +157,11 @@
                     <div class="text_C"></div>
                 </div>
             </div>
+            <div class="choose">
+                <textarea name="select" placeholder="Enter a valid value"></textarea>
+                <button type="button" class="button_ok ok1">Ok</button>
+            </div>
+
             <div class="right">
                 <h2 class="computer my">Your turn</h2>
                 <div class="box_U">
