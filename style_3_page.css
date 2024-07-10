@@ -104,3 +104,12 @@
         flex-wrap: wrap;
     }
 }
+
+@media screen and (max-width:264.47px){
+    .startGame2{
+        top: 10vh;
+    }
+    .loader{
+        top: 10vh;
+    }
+}
