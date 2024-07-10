@@ -25,7 +25,7 @@
         while (mySet.size < 5) {
             mySet.add(Math.floor(Math.random() * 49) + 1);
         }
-        
+        console.log(mySet);
         // creating turns
         let cGrid = document.querySelectorAll('.text_C');
         cGrid.forEach((element, index) => {
@@ -134,11 +134,11 @@
         };
         document.querySelector(".ok1").addEventListener('click', handler);
     
-        document.querySelector('.startGame').addEventListener('click', () => {
-            document.querySelector('.naam').textContent = (document.querySelector('.select1').value) + "'s grid";
-            document.querySelector('.naam').style.color = 'red';
-        })
+        
     
     });
-    
+    document.querySelector('.startGame').addEventListener('click', () => {
+        document.querySelector('.naam').textContent = (document.querySelector('.select1').value) + "'s grid";
+        document.querySelector('.naam').style.color = 'red';
+    })
 })();
