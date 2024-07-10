@@ -114,7 +114,7 @@ textarea[name="select1"]:hover {
     z-index: 100;
 }
 
-@media screen and (max-width:264.47px) {
+@media screen and (max-width:456px) {
   .startGame{
     background-color: green;
   }
