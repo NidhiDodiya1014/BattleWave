@@ -25,8 +25,7 @@
         while (mySet.size < 5) {
             mySet.add(Math.floor(Math.random() * 49) + 1);
         }
-        console.log(mySet);
-    
+        
         // creating turns
         let cGrid = document.querySelectorAll('.text_C');
         cGrid.forEach((element, index) => {
