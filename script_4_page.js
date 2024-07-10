@@ -64,7 +64,7 @@
                         mySet.delete(parseInt(userInput));
                         userCount++;
                         // console.log(userCount);
-                        if (userCount == 1) {
+                        if (userCount == 5) {
                             //user won
                             flag = true;
                             document.querySelector('.ok1').style.display = "none";
