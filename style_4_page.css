@@ -100,7 +100,7 @@ textarea[name="select"] {
     background-position: 50% 100%;
   }
 
-  @media screen and (max-width:456px) {
+  @media screen and (max-width:1146px) {
     .vessel{
         flex-direction: column;
         justify-content: space-around;
@@ -111,5 +111,10 @@ textarea[name="select"] {
     }
     .box_C,.box_U{
         width: 107vw;
+    }
+  }
+  @media screen and (max-width:345px) {
+    .box_C,.box_U{
+        width: 606vw;
     }
   }

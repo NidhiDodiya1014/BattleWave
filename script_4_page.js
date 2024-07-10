@@ -48,6 +48,7 @@
         if (!flag1) {
             const textarea = document.querySelector('textarea[name="select"]');
             const userInput = textarea.value;
+            
 
             if (/^\d+$/.test(userInput) && userInput !== '') {
                 if (userInput > 49 || userInput < 1) alert("The entered value was not a valid value between 1 and 49. You lost your chance!")
