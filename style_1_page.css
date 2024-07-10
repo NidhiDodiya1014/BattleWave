@@ -103,9 +103,10 @@ textarea[name="select1"]:hover {
 }
 
 .select1 {
-    position: absolute;
+    position: fixed;
     top: 68vh;
-    left: 43%;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 100;
 }
 
