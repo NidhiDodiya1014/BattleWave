@@ -31,18 +31,6 @@ body {
 }
 
 
-
-
-.loader1 {
-    top: 72%;
-    left: 48%;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 textarea[name="select1"] {
     padding: 5px;
     font-size: 14px;
@@ -73,6 +61,16 @@ textarea[name="select1"]::placeholder {
 textarea[name="select1"]:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     background-position: 50% 100%;
+}
+
+.loader1 {
+    top: 75%;
+    left: 48%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .startGame {
@@ -114,21 +112,4 @@ textarea[name="select1"]:hover {
     -webkit-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     z-index: 100;
-}
-
-@media (min-width: 2015px) {
-    .startGame {
-        top: 90vh;
-        left: 51%;
-    }
-
-    .loader1 {
-        top: 88vh;
-        left: 49%;
-    }
-
-    .select1 {
-        top: 79%;
-        left: 49%;
-    }
 }
