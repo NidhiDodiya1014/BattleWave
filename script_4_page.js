@@ -74,7 +74,6 @@
                             const audio = new Audio('success-1-6297.mp3');
                             audio.play();
                             document.querySelector(".ok1").removeEventListener('click', handler);
-                            alert('you won!');
                         }
                     }
                     else {
@@ -116,7 +115,6 @@
                         document.querySelector('.select').style.display = 'none';
                         document.querySelector('.choose').style.display = "block";
                         document.querySelector('.gif1').style.display = 'block';
-                        alert('computer won!');
                         const audio = new Audio('game-fx-9-40197.mp3');
                         audio.play();
                     }
