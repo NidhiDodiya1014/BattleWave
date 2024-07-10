@@ -99,3 +99,16 @@ textarea[name="select"] {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     background-position: 50% 100%;
   }
+
+  @media screen and (max-width:456px) {
+    .vessel{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .ok1 {
+        width: 20vw;
+    }
+    .box_C,.box_U{
+        width: 87vw;
+    }
+  }

@@ -115,9 +115,6 @@ textarea[name="select1"]:hover {
 }
 
 @media screen and (max-width:456px) {
-  .startGame{
-    background-color: green;
-  }
   .loader1{
     left: 39%;
   }
